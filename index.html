@@ -216,12 +216,12 @@ function draw() {
   ctx.fillStyle = '#378ADD';
   ctx.beginPath(); ctx.arc(START.x*CELL+CELL/2, START.y*CELL+CELL/2, CELL/2-4, 0, Math.PI*2); ctx.fill();
   ctx.fillStyle = '#fff'; ctx.font = 'bold 11px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
-  ctx.fillText('YOU', START.x*CELL+CELL/2, START.y*CELL+CELL/2);
+  ctx.fillText('Ghost', START.x*CELL+CELL/2, START.y*CELL+CELL/2);
 
   ctx.fillStyle = '#1D9E75';
   ctx.beginPath(); ctx.arc(TARGET.x*CELL+CELL/2, TARGET.y*CELL+CELL/2, CELL/2-4, 0, Math.PI*2); ctx.fill();
   ctx.fillStyle = '#fff';
-  ctx.fillText('AI', TARGET.x*CELL+CELL/2, TARGET.y*CELL+CELL/2);
+  ctx.fillText('Pacman', TARGET.x*CELL+CELL/2, TARGET.y*CELL+CELL/2);
 }
 
 reset();
